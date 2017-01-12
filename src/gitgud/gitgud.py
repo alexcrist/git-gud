@@ -71,4 +71,15 @@ class git(object):
         if sup:
             text = git.fig(text)
         print(text)
+
+    @staticmethod
+    def schwifty():
+        args = git.parse_args("schwifty")
+        name = args.name or "You"
+        sup = args.super
+        text = "{name} got schwifty in here!".format(name=name)
+
+        if sup:
+            text = git.fig(text)
+        print(text)
                                                             
